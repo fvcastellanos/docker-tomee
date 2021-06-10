@@ -1,0 +1,9 @@
+version: '3'
+services:
+  tomee:
+    image: tomee-custom:8.0.6-plus
+    hostname: apache-tomee
+    container_name: tomee
+    ports:
+      - 8888:8080
+    restart: always
